@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
+import ( React ) from 'react';
 
 const client = generateClient<Schema>();
 
@@ -18,8 +19,6 @@ function App() {
   }
 
 
-  import React from 'react';
-
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-blue-50 font-sans text-slate-800">
@@ -33,6 +32,7 @@ const App: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
+	   <main>
       <header className="py-20 px-6 text-center bg-gradient-to-b from-blue-100 to-blue-50">
         <div className="max-w-4xl mx-auto">
           <span className="uppercase tracking-widest text-blue-500 font-semibold text-sm">Cleveland's Premier Bubble Artist</span>
@@ -85,7 +85,7 @@ const App: React.FC = () => {
 };
 
 
-    <main>
+   
       <h1>My to-dos</h1>  
       <button onClick={createTodo}>+ new</button>
       <ul>
