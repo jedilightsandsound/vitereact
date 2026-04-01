@@ -84,7 +84,7 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+
     <main>
       <h1>My to-dos</h1>  
       <button onClick={createTodo}>+ new</button>
