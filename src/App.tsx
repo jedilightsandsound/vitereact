@@ -17,7 +17,7 @@ function App() {
     client.models.Todo.create({ content: window.prompt("Todo content") });
   }
 
-  return (
+
   import React from 'react';
 
 const App: React.FC = () => {
@@ -101,7 +101,7 @@ export default App;
         </a>
       </div>
     </main>
-  );
+  
 }
 
 export default App;
